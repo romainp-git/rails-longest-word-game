@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <h2>New game</h2>
+      <ul class="d-flex list-unstyled" id="tiles">
+        <% @letters.each do | letter | %>
+        <li class="shadow-sm border border-primary"><%= letter%></li>
+        <% end %>
+      </ul>
+      <p>Ask your coach anything:</p>
+      <form action="/score" method="post" data-turbo="false">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        <div class="input-group">
+          <input type="text" class="form-control" name="word" placeholder="Your Answer" aria-describedby="basic-addon2">
+          <button class="btn btn-outline-secondary" type="submit">Play</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

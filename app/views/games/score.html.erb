@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <h2>Game Result</h2>
+      <p><%= @message.html_safe %></p>
+      <p>Score :<%= @score %></p>
+      <%= link_to "Play again", new_path, class: "btn btn-primary mt-3" %>
+    </div>
+  </div>
+</div>

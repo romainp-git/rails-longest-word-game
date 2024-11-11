@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
+
+ #tiles{
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+ }
+
+ #tiles li{
+  color: white;
+  font-size:20px;
+  background-color: dodgerblue;
+  margin: 0 10px;
+  min-width: 30px;
+  text-align: center;
+ }
